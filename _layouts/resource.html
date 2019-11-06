@@ -1,0 +1,22 @@
+---
+layout: page
+---
+
+<div class="resource-wrapper">
+
+  <div class="resource">
+    {% case page.type %} <!-- NOTE:"in the case of page type..."  -->
+      {% when "map" %} <!-- NOTE: when type: map, use this embed code -->
+        <iframe src="{{page.location}}" width="640" height="480"> ></iframe>
+      {% when "table" %} <!-- NOTE: when type: tabel, use this i -->
+        <iframe src="{{page.location}}" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;" ></iframe>
+      {% else %}
+        <p>Resource type unknown!</p>
+    {% endcase %}
+  </div>
+
+  <div class="description">
+    {{ content }}
+  </div>
+
+</div>

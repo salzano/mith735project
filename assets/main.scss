@@ -1,0 +1,29 @@
+---
+---
+@import "minima";
+
+.site-title {
+  font-size: medium;
+  font-weight: 600
+}
+
+.site-nav {
+  font-size: smaller
+}
+
+.wrapper {
+  max-width: 80%
+}
+
+.resource-wrapper {
+  display: flex;
+}
+
+.resource {
+  flex: 8;
+}
+
+.description {
+  flex: 4;
+  padding-left: 1em;
+}
